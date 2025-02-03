@@ -1,0 +1,25 @@
+{
+  "name": "-joshcodebit-projeto_final_m17f_psi-parte2-joshcodebit-projeto_final_m17f_psi--1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshcodebit/-Joshcodebit-Projeto_Final_M17F_PSI-parte2-Joshcodebit-Projeto_Final_M17F_PSI-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshcodebit/-Joshcodebit-Projeto_Final_M17F_PSI-parte2-Joshcodebit-Projeto_Final_M17F_PSI-/issues"
+  },
+  "homepage": "https://github.com/Joshcodebit/-Joshcodebit-Projeto_Final_M17F_PSI-parte2-Joshcodebit-Projeto_Final_M17F_PSI-#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
