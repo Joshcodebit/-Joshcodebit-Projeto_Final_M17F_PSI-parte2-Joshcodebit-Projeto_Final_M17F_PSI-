@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <%- include("partials/header") %>
+
+    <h1>Página de Cliente</h1>
+    <p> O nome do meu cliente é: <% nameOfTheClient %> </p>
+    <ul>
+       <% for(let i = 0; i < contas.length; i++) { %>
+        <li> <%= contas[i] %></li>
+  <%  } %>  
+       
+    </ul>
+</body>
+</html>
