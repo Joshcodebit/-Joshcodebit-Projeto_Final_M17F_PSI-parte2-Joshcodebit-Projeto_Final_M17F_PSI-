@@ -12,10 +12,10 @@ app.get('/', (req, res) => {
 
     let sms = "Esta é a minha lista:"
     
-    res.render("main", {mensagem: sms})
+    res.render("compras", {mensagem: sms})
 })
  
-app.get('/contactos', (req, res) => {
+/* app.get('/contactos', (req, res) => {
     
     res.render("contacts")
 })
@@ -28,7 +28,14 @@ app.get('/lista', (req, res) => {
     res.render('index', {nameOfTheClient: name, contas: contasBancarias});
 })
  
- 
+  */
+
+app.post("Nova compra", (req, res) => {
+    const lista = req.body
+
+})
+
+
 const PORT = 3006;
 app.listen(PORT, () => {
     console.log(`Servidor a correr em https://localhost:${PORT}`);

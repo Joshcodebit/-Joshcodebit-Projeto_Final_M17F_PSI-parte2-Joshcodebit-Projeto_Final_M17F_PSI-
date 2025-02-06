@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+
+    
+<body>
+   
+    <h1>Compras</h1>  
+
+    <form id="compras">
+        <label for="produto">Produto</label>
+        <input type="text" name="produto" id="produto">
+        <br>
+        <label for="quantidade"> Quantidade</label>
+        <input type="text" name="quantidade" id="quantidade">
+        <button type="submit">Submeter</button>
+    </form>
+    
+    <script>
+        document . getElementById('compras').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        axios.post('/users', data)
+        .then(response => {
+        console.log('Success:', response.data);
+        location.reload();
+        
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        
+        });
+        app.get('/compras', (req, res) => {
+
+let sms = "Esta é a minha lista:"
+
+res.render("main", {mensagem: sms})
+})
+
+    })
+
+
+    </script>
+        
+    
+</body>
+</html>

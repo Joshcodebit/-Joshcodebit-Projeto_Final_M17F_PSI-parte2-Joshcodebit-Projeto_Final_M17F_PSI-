@@ -12,7 +12,14 @@
     <%- include("partials/header") %>
 
     <h1>Home</h1>  
+
+    <form id="compras">
+        <label for="produto">Produto</label>
+        <input type="text" name="produto" id="produto" value="<%= user.produto %>">
+        <label for="quantidade"> Quantidade</label>
+        <input type="text" name="quantidade" id="quantidade" value="<%= user.quantidade %>">
+    </form>
        
-    </ul>
+    
 </body>
 </html>
